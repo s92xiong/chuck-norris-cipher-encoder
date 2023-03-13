@@ -9,7 +9,10 @@ public class Cipher {
         String input = scanner.nextLine();
         System.out.println();
         System.out.println("The result:");
+        printBinary(input);
+    }
 
+    public static void printBinary(String input) {
         for (int i = 0; i < input.length(); i++) {
             char currentChar = input.charAt(i);
             int asciiCode = convertCharToASCII(currentChar);
