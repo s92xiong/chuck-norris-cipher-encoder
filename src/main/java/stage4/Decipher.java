@@ -34,7 +34,7 @@ public class Decipher {
         return input;
     }
 
-    private static List<String> decipherIntoBinaryChunks(String[] arr) {
+    static List<String> decipherIntoBinaryChunks(String[] arr) {
         List<String> stringList = new ArrayList<>();
         for (int i = 0; i < arr.length; i+=2) {
             char header = (arr[i].equals("0")) ? '1' : '0';
@@ -45,7 +45,7 @@ public class Decipher {
         return stringList;
     }
 
-    public static String duplicateChar(char c, int x) {
+    static String duplicateChar(char c, int x) {
         String result = "";
         for (int i = 0; i < x; i++) {
             result += c;
@@ -53,7 +53,7 @@ public class Decipher {
         return result;
     }
 
-    private static List<String> splitStringIntoSubstrings(String input, int substringLength) {
+    static List<String> splitStringIntoSubstrings(String input, int substringLength) {
         List<String> substrings = new ArrayList<>();
         for (int i = 0; i < input.length(); i += substringLength) {
             // Using Math.min is not necessary because the input.length should always be divisible by substringLength
@@ -65,7 +65,7 @@ public class Decipher {
         return substrings;
     }
 
-    private static String binaryToChar(List<String> binaryChunkList) {
+    static String binaryToChar(List<String> binaryChunkList) {
         StringBuilder finalStrBuilder = new StringBuilder();
         for (String chunk : binaryChunkList) {
             // The 2 as the second argument specifies that the string should be interpreted as a binary number
