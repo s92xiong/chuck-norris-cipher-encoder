@@ -6,11 +6,7 @@ import java.util.Scanner;
 
 public class Decipher {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input encoded string:");
-        String input = scanner.nextLine();
-        System.out.println();
-        System.out.println("The result:");
+        String input = getInput();
 
         // Split ciphered input at the space --> ["0", "0", "00", "0000"]
         String[] cipherStringArr = input.split(" ");
@@ -27,6 +23,15 @@ public class Decipher {
 
         // Print string result
         System.out.println(binaryToChar(sevenDigitBinaryChunks));
+    }
+
+    private static String getInput() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input encoded string:");
+        String input = scanner.nextLine();
+        System.out.println();
+        System.out.println("The result:");
+        return input;
     }
 
     private static List<String> decipherIntoBinaryChunks(String[] arr) {
