@@ -1,4 +1,4 @@
-package stage3;
+package com.example.chucknorriscipherencoder.stage3;
 import java.util.Scanner;
 public class Cipher {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package stage2;
+package com.example.chucknorriscipherencoder.stage2;
 
 import org.junit.jupiter.api.Test;
 

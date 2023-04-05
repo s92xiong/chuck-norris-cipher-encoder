@@ -1,4 +1,4 @@
-package stage1;
+package com.example.chucknorriscipherencoder.stage1;
 
 import java.util.Scanner;
 
