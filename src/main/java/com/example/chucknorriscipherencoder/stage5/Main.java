@@ -96,7 +96,6 @@ class Cipher {
 }
 
 class Decipher {
-    static String errorMsg = "Encoded string is not valid.";
     public static void main(String input) throws Exception {
         if (!isAllZeroes(input)) {
             throw new Exception("An error occurred.");
