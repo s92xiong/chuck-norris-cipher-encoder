@@ -155,10 +155,6 @@ class Decipher {
     static List<String> splitStringIntoSubstrings(String input, int substringLength) {
         List<String> substrings = new ArrayList<>();
         for (int i = 0; i < input.length(); i += substringLength) {
-            // Using Math.min is not necessary because the input.length should always be divisible by substringLength
-            // It ensures we don't extract a substring that goes beyond the end of the input string
-            // However, it is nice to have as a safety measure
-//            String substring = input.substring(i, Math.min(i + substringLength, input.length()));
             String substring = input.substring(i, i + substringLength);
             substrings.add(substring);
         }
