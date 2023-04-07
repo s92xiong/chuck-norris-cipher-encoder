@@ -26,18 +26,10 @@ public class Main {
 
     private static void runOperations(String input) {
         switch (input) {
-            case "encode":
-                runEncode();
-                break;
-            case "decode":
-                runDecode();
-                break;
-            case "exit":
-                runExit();
-                break;
-            default:
-                System.out.println(String.format("There is no '%s' operation", input));
-                break;
+            case "encode" -> runEncode();
+            case "decode" -> runDecode();
+            case "exit" -> runExit();
+            default -> System.out.println(String.format("There is no '%s' operation", input));
         }
         System.out.println();
     }
